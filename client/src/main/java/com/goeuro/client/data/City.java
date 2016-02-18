@@ -5,7 +5,7 @@ import java.util.Map;
 
 import org.codehaus.jackson.annotate.JsonProperty;
 
-// Using protobuf is definitely anoption here
+// Using protobuf is definitely an option here
 public class City {
 	@JsonProperty("_id")
 	protected String _id;

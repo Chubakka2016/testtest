@@ -8,7 +8,8 @@ import com.goeuro.client.data.City;
  * Utility POJO serialization class 
  */
 public class CityCSVSerializer {
-	// Stores _id, name, type, latitude, longitude
+	
+	// Stores city object as "_id, name, type, latitude, longitude"
 	public static String serialize(City city) {
 		String latitude = city.getGeo_position() != null ? String.valueOf(city.getGeo_position().getLatitude()) : "";
 		String longitude = city.getGeo_position() != null ? String.valueOf(city.getGeo_position().getLongitude()) : "";
