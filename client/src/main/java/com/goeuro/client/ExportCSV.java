@@ -42,9 +42,12 @@ public class ExportCSV {
 
 		System.out.println("Connecting to " + urlUploader.hostname);
 		try {
-			List<City> cities = urlUploader.readJsonObject(cityName, new TypeReference<List<City>>() {
-			});
-			storeCities(cities, outputFile);
+			List<City> cities = urlUploader.readJsonObject(cityName, new TypeReference<List<City>>() {});
+			if (cities != null) {
+				storeCities(cities, outputFile);
+			} else {
+				log.error("Failed obtaining city information");
+			}
 
 		} catch (Exception ex) {
 			log.error("Error obtaining city information", ex);
