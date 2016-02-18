@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.goeuro.client.URLUploaderTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.67 sec <<< FAILURE!
+com.goeuro.client.URLUploaderTest.testEmptyJsonDeserializer()  Time elapsed: 0.658 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.goeuro.client.URLUploaderTest.testEmptyJsonDeserializer(URLUploaderTest.java:38)
+Caused by: java.lang.ClassNotFoundException: org.junit.Assert
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 19 more
+
+com.goeuro.client.URLUploaderTest.testJsonDeserializer()  Time elapsed: 0.011 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.goeuro.client.URLUploaderTest.testJsonDeserializer(URLUploaderTest.java:26)
+
