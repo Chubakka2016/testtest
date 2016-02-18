@@ -43,9 +43,9 @@ public class URLUploader {
 		URL apiUrl = new URL(protocol + "://" + hostname + "/" + path + "/" + value);
 		int attempts = 0;
 		do {
+			attempts++;
 			try {
-				URLConnection conn = apiUrl.openConnection();
-				attempts++;
+				URLConnection conn = apiUrl.openConnection();				
 
 				if (!(conn instanceof HttpURLConnection)) {
 					log.error("URL: " + conn + " is not a http url!");
